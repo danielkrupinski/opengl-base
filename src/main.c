@@ -20,7 +20,7 @@ int main(void)
     glViewport(0, 0, 800, 600);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    while(!glfwWindowShouldCLose(window)) {
+    while (!glfwWindowShouldCLose(window)) {
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
