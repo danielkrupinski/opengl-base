@@ -1,6 +1,8 @@
 #include <GLFW/glfw3.h>
 #include <stdio.h>
 
+void framebuffer_size_callback(GLFWwindow*, int, int);
+
 int main(void)
 {
     glfwInit();
@@ -15,5 +17,7 @@ int main(void)
         return 1;
     }
     glfwMakeContextCurrent(window);
+    glViewport(0, 0, 800, 600);
+
     return 0;
 }
