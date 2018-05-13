@@ -18,7 +18,7 @@ int main(void)
     }
     glfwMakeContextCurrent(window);
     glViewport(0, 0, 800, 600);
-
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     return 0;
 }
 
