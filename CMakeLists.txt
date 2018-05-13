@@ -6,7 +6,7 @@ set(CMAKE_BUILD_TYPE Release)
 include_directories(include)
 
 file(GLOB SOURCES "src/*.c")
-set(CMAKE_C_FLAGS_RELEASE "-std=c17 -m64 -Ofast -flto -march=native -funroll-loops")
+set(CMAKE_C_FLAGS_RELEASE "-std=c11 -m64 -Ofast -flto -march=native -funroll-loops")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 add_executable(OpenGL-Base ${SOURCES})
